@@ -171,6 +171,8 @@ div.info {
     font-family: Roboto, sans-serif;
 }
 
+
+
 /* --- IMAGES --- */
 
 .biden {
@@ -286,4 +288,10 @@ div.info {
     font-size: 25px;
     font-family: Roboto, sans-serif;
     font-weight: bold;
+}
+
+@media screen and (max-width: 460px) {
+    .republic a {
+        font-size: 5vw;
+    }
 }
