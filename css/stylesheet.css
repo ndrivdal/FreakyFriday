@@ -10,7 +10,7 @@ body {
 .container {
     display: grid;
     grid-template-columns: auto 26.9% 26.9% auto;
-    grid-template-rows: 10% 50% auto;
+    grid-template-rows: 10% 20% 50% auto;
     height: 100vh;
 }
 
@@ -115,6 +115,8 @@ body {
     content: url("../images/Joe Biden BW.png");
     justify-self: start;
     align-self: end;
+    position: relative;
+    transform: translate(0, -54%);
 }
 
 .trump {
@@ -125,4 +127,16 @@ body {
     content: url("../images/Donald Trump BW.png");
     justify-self: end;
     align-self: end;
+    z-index: 1;
+    position: relative;
+    transform: translate(0, -54%);
+}
+
+.map {
+    content: url("../images/President Map.png");
+    height: 25vw;
+    position: absolute;
+    left: 30vw;
+    bottom: 30vh;
+    filter: drop-shadow(0 0 50px rgba(255, 255, 255, 1));
 }
