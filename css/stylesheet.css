@@ -53,9 +53,9 @@ body.donald {
 
 .container {
     display: grid;
-    grid-template-columns: auto 26.9% 26.9% auto;
+    grid-template-columns: 1fr 26.9% 26.9% 1fr;
     grid-template-rows: 10% 20% 50% auto;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .voteBar {
@@ -156,52 +156,55 @@ body.donald {
     }
 }
 
+div.info {
+    grid-row-start: 3;
+    grid-row-end: end;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    justify-self: center;
+    text-align: center;
+    float: right;
+    background-color: white;
+    transform: translate(0, 30px);
+
+    font-family: Roboto, sans-serif;
+}
+
 /* --- IMAGES --- */
 
 .biden {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: end;
-    width: 75%;
+    width: 37.5%;
     content: url("../images/Joe Biden BW.png");
-    justify-self: start;
-    align-self: end;
-    position: relative;
-    transform: translate(0, -54%);
+    position: fixed;
+    left: 10px;
+    bottom: 0;
     z-index: 1;
 }
 
 .bidenPortrait {
-    grid-row-start: 1;
-    grid-row-end: end;
-    position: relative;
-    align-self: end;
-    width: 60%;
+    position: fixed;
+    bottom: 0px;
+    left: 10px;
+    width: 20%;
     content: url("../images/Joe Biden Portrait BW.png");
 
     z-index: 1;
 }
 
 .trump {
-    grid-column-start: 3;
-    grid-column-end: 5;
-    grid-row-end: end;
-    width: 75%;
+    width: 37.5%;
     content: url("../images/Donald Trump BW.png");
-    justify-self: end;
-    align-self: end;
     z-index: 1;
-    position: relative;
-    transform: translate(0, -54%);
+    position: fixed;
+    bottom: 0;
+    right: 10px;
 }
 
 .donaldPortrait {
-    grid-row-start: 1;
-    grid-row-end: end;
-    position: relative;
-    align-self: end;
-    width: 60%;
+    position: fixed;
+    bottom: 0;
+    right: 10px;
+    width: 25%;
     content: url("../images/Donald Trump Portrait BW.png");
 
     z-index: 1;
@@ -222,8 +225,8 @@ body.donald {
     min-height: 75px;
     position: absolute;
     left: 50%;
-    top: 50%;
-    transform: translate(-50%, -250%);
+    top: 20%;
+    transform: translate(-50%, -50%);
 }
 
 .democrat a {
@@ -248,8 +251,8 @@ body.donald {
     min-height: 75px;
     position: absolute;
     left: 50%;
-    top: 50%;
-    transform: translate(-50%, -250%);
+    top: 20%;
+    transform: translate(-50%, -50%);
 }
 
 .republic a {
