@@ -253,6 +253,11 @@ div.info {
     font-weight: bold;
 }
 
+@media screen and (max-width: 460px) {
+    .democrat a {
+        font-size: 5vw;
+    }
+}
 
 
 .repImage {
