@@ -1,5 +1,6 @@
 body {
-    background: linear-gradient(90deg, #3D7DEC 25%, #E43661 75%) repeat-y;
+    background: linear-gradient(90deg, #2b59a9 25%, #ab2647 75%) repeat-y;
+    margin: 0;
 }
 
 .navbar {
@@ -8,9 +9,9 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 53.8% 1fr ;
-    grid-template-rows: 10% 50%;
-    height: 60vh;
+    grid-template-columns: auto 26.9% 26.9% auto;
+    grid-template-rows: 10% 50% auto;
+    height: 100vh;
 }
 
 .voteBar {
@@ -20,7 +21,7 @@ body {
     transform: translate(0, 100px);
     grid-row-start: 1;
     grid-column-start: 2;
-    grid-column-end: 3;
+    grid-column-end: 4;
     justify-self: center;
     border-radius: 15px;
     filter: drop-shadow(0 0 25px rgba(0, 0, 0, 0.5));
@@ -34,7 +35,7 @@ body {
     transform: translate(0, 100px);
     grid-row-start: 1;
     grid-column-start: 2;
-    grid-column-end: 3;
+    grid-column-end: 4;
     justify-self: start;
 
     animation-name: loadBlue;
@@ -49,7 +50,7 @@ body {
     transform: translate(0, 100px);
     grid-row-start: 1;
     grid-column-start: 2;
-    grid-column-end: 3;
+    grid-column-end: 4;
     justify-self: end;
 
     animation-name: loadRed;
@@ -64,4 +65,64 @@ body {
 @keyframes loadRed {
     from {width: 0%;}
     to {width: 39.8%;}
+}
+
+.blueVoters {
+    color: #6091e7;
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: bold;
+    transform: translate(10px, 60px);
+
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    justify-self: start;
+
+    filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.25));
+}
+
+.redVoters {
+    color: #f16288;
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: bold;
+    transform: translate(-10px, 60px);
+
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    justify-self: end;
+
+    filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.25));
+}
+
+@media screen and (max-width: 480px) {
+    .blueVoters {
+        font-size: 5vw;
+    }
+
+    .redVoters {
+        font-size: 5vw;
+    }
+}
+
+.biden {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-end: end;
+    width: 75%;
+    content: url("../images/Joe Biden BW.png");
+    justify-self: start;
+    align-self: end;
+}
+
+.trump {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-end: end;
+    width: 75%;
+    content: url("../images/Donald Trump BW.png");
+    justify-self: end;
+    align-self: end;
 }
