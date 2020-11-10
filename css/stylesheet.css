@@ -92,7 +92,7 @@ body.donald {
     width: 39.8%;
     height: 20px;
     background-color: #E43661;
-    border-radius: 0px 15px 15px 0;
+    border-radius: 0 15px 15px 0;
     transform: translate(0, 100px);
     grid-row-start: 1;
     grid-column-start: 2;
@@ -106,12 +106,12 @@ body.donald {
 }
 
 @keyframes loadBlue {
-    from {width: 0%;}
+    from {width: 0;}
     to {width: 53.9%;}
 }
 
 @keyframes loadRed {
-    from {width: 0%;}
+    from {width: 0;}
     to {width: 39.8%;}
 }
 
@@ -182,7 +182,7 @@ div.info {
 
 .bidenPortrait {
     position: fixed;
-    bottom: 0px;
+    bottom: 0;
     left: 10px;
     width: 20%;
     content: url("../images/Joe Biden Portrait BW.png");
