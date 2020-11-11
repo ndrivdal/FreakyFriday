@@ -1,0 +1,224 @@
+div.swingStates {
+    grid-row-start: 3;
+    grid-row-end: end;
+    margin: 10px;
+    transform: translate(0, 50px);
+}
+
+div.swingStates.rightBar {
+    grid-column-start: 4;
+    grid-column-end: end;
+}
+
+div.swingStates div.miniVoteBar {
+    width: 100%;
+    height: 10px;
+    background-color: white;
+    border-radius: 15px;
+    filter: drop-shadow(0 0 25px rgba(0, 0, 0, 0.5));
+    margin-top: 40px;
+}
+
+div.votersRed {
+    color: #f16288;
+    font-size: 1.5vw;
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    transform: translate(0, -35px);
+}
+
+div.votersBlue {
+    color: #3d7dec;
+    font-size: 1.5vw;
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    transform: translate(0, -35px);
+}
+
+/* --- RED VOTEBAR ---*/
+
+div.red45\.6 {
+    width: 45.6%;
+    height: 10px;
+    background-color: #E43661;
+    border-radius: 15px 0 0 15px;
+    transform: translate(0, 0px);
+}
+
+div.red47\.5 {
+    width: 47.5%;
+    height: 10px;
+    background-color: #E43661;
+    border-radius: 15px 0 0 15px;
+    transform: translate(0, 0px);
+}
+
+div.red47\.9 {
+    width: 47.9%;
+    height: 10px;
+    background-color: #E43661;
+    border-radius: 15px 0 0 15px;
+    transform: translate(0, 0px);
+}
+
+div.red48\.9 {
+    width: 48.9%;
+    height: 10px;
+    background-color: #E43661;
+    border-radius: 15px 0 0 15px;
+    transform: translate(0, 0px);
+}
+
+div.red49\.1 {
+    width: 49.1%;
+    height: 10px;
+    background-color: #E43661;
+    border-radius: 15px 0 0 15px;
+    transform: translate(0, 0px);
+}
+
+div.red49\.3 {
+    width: 49.3%;
+    height: 10px;
+    background-color: #E43661;
+    border-radius: 15px 0 0 15px;
+    transform: translate(0, 0px);
+}
+
+div.red50\.1 {
+    width: 50.1%;
+    height: 10px;
+    background-color: #E43661;
+    border-radius: 15px 0 0 15px;
+    transform: translate(0, 0px);
+}
+
+div.red51\.2 {
+    width: 51.2%;
+    height: 10px;
+    background-color: #E43661;
+    border-radius: 15px 0 0 15px;
+    transform: translate(0, 0px);
+}
+
+div.red52\.2 {
+    width: 52.2%;
+    height: 10px;
+    background-color: #E43661;
+    border-radius: 15px 0 0 15px;
+    transform: translate(0, 0px);
+}
+
+div.red53\.2 {
+    width: 53.2%;
+    height: 10px;
+    background-color: #E43661;
+    border-radius: 15px 0 0 15px;
+    transform: translate(0, 0px);
+}
+
+div.red53\.4 {
+    width: 53.4%;
+    height: 10px;
+    background-color: #E43661;
+    border-radius: 15px 0 0 15px;
+    transform: translate(0, 0px);
+}
+
+/* --- BLUE VOTEBAR --- */
+
+div.blue45 {
+    width: 45%;
+    height: 10px;
+    background-color: #3d7dec;
+    border-radius: 15px 0 0 15px;
+    transform: translate(0, 0px);
+}
+
+div.blue45\.2 {
+    width: 45.2%;
+    height: 10px;
+    background-color: #3d7dec;
+    border-radius: 15px 0 0 15px;
+    transform: translate(0, 0px);
+}
+
+div.blue46\.4 {
+    width: 46.4%;
+    height: 10px;
+    background-color: #3d7dec;
+    border-radius: 15px 0 0 15px;
+    transform: translate(0, 0px);
+}
+
+div.blue47\.9 {
+    width: 47.9%;
+    height: 10px;
+    background-color: #3d7dec;
+    border-radius: 15px 0 0 15px;
+    transform: translate(0, 0px);
+}
+
+div.blue48\.7 {
+    width: 48.7%;
+    height: 10px;
+    background-color: #3d7dec;
+    border-radius: 15px 0 0 15px;
+    transform: translate(0, 0px);
+}
+
+div.blue49\.4 {
+    width: 49.4%;
+    height: 10px;
+    background-color: #3d7dec;
+    border-radius: 15px 0 0 15px;
+    transform: translate(0, 0px);
+}
+
+div.blue49\.5 {
+    width: 49.5%;
+    height: 10px;
+    background-color: #3d7dec;
+    border-radius: 15px 0 0 15px;
+    transform: translate(0, 0px);
+}
+
+div.blue49\.6 {
+    width: 49.6%;
+    height: 10px;
+    background-color: #3d7dec;
+    border-radius: 15px 0 0 15px;
+    transform: translate(0, 0px);
+}
+
+div.blue49\.8 {
+    width: 49.8%;
+    height: 10px;
+    background-color: #3d7dec;
+    border-radius: 15px 0 0 15px;
+    transform: translate(0, 0px);
+}
+
+div.blue50\.2 {
+    width: 50.2%;
+    height: 10px;
+    background-color: #3d7dec;
+    border-radius: 15px 0 0 15px;
+    transform: translate(0, 0px);
+}
+
+div.blue50\.6 {
+    width: 50.6%;
+    height: 10px;
+    background-color: #3d7dec;
+    border-radius: 15px 0 0 15px;
+    transform: translate(0, 0px);
+}
+
+div.blue52\.8 {
+    width: 52.8%;
+    height: 10px;
+    background-color: #3d7dec;
+    border-radius: 15px 0 0 15px;
+    transform: translate(0, 0px);
+}
