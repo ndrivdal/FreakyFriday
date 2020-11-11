@@ -15,6 +15,16 @@ body.donald {
     margin: 0;
 }
 
+.title {
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-size: 24px;
+    background: linear-gradient(90deg, #3d7dec 35%, #E43661 65%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 0 25px rgba(0, 0, 0, 0.25));
+}
+
 /* --- NAVBAR --- */
 
 .navbar {
@@ -83,7 +93,7 @@ body.donald {
     grid-column-end: 4;
     justify-self: start;
 
-    animation-name: loadBlue;
+    animation-name: loadBar;
     animation-duration: 3s;
 
     z-index: 2;
@@ -100,20 +110,14 @@ body.donald {
     grid-column-end: 4;
     justify-self: end;
 
-    animation-name: loadRed;
+    animation-name: loadBar;
     animation-duration: 3s;
 
     z-index: 2;
 }
 
-@keyframes loadBlue {
+@keyframes loadBar {
     from {width: 0;}
-    to {width: 53.9%;}
-}
-
-@keyframes loadRed {
-    from {width: 0;}
-    to {width: 39.8%;}
 }
 
 .blueVoters {
@@ -170,8 +174,6 @@ div.info {
 
     font-family: Roboto, sans-serif;
 }
-
-
 
 /* --- IMAGES --- */
 
